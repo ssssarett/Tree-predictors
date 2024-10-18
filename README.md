@@ -1,2 +1,6 @@
-# Tree-predictors
-Tree predictors for binary classification
+*Abstract*
+This report presents the development and evaluation of decision tree classifiers and a Random Forest algorithm for classifying mushrooms as edible or poisonous using data from the UCI Machine Learning Repository. After meticulous data preprocessing—including handling missing values and removing duplicates—we obtained a clean dataset comprising 36,948 observations and 15 features. We explored various impurity measures such as the Gini index, entropy, and a square root function to determine the most effective splitting criteria for the decision trees.
+
+Through comprehensive hyperparameter tuning using cross-validation, we identified that the optimal decision tree configuration utilized the Gini impurity measure with no maximum depth and a minimum of five samples required to split. This model achieved a mean cross-validation accuracy of 99.77\%. Building upon this, we developed a Random Forest model by integrating multiple decision trees with the selected hyperparameters, employing bootstrap aggregation and random feature selection to enhance performance. The Random Forest outperformed the individual decision tree classifier, achieving an accuracy of 99.95\% on the test set.
+
+The results demonstrate that both decision trees and Random Forests are highly effective for this classification task, exhibiting strong predictive capabilities and excellent generalization to unseen data. 
